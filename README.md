@@ -18,5 +18,6 @@ En una firma del método, para devolver un valor al autor de la llamada mediante
 En un cuerpo de miembro, para indicar que un valor devuelto de referencia se almacena localmente como una referencia que el autor de la llamada pretende modificar o, en general, que una variable local accede a otro valor por referencia. 
 En una declaración struct para declarar ref struct o ref readonly struct. 
 Cuando se utiliza en un método y se pasa como referencia lo que hacemos  es crear como una variable de almacenamiento pero sin ningún valor hasta que el usuario le de uno .  el usuario puede modificar el valor que debería ser devuelto y ese cambio se reflejara también en el objeto que hayamos creado 
+
 ###2.5
 Los constructores son los que inicializan los valores de los objetos que utlizaremos después ellos tienen el mismo nombre de a clase y seria un prerrequisito para la creación de un nuevo objeto.
