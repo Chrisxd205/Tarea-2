@@ -5,6 +5,7 @@ class Employee
     private string name;
     private string alias;
    
+private decimal salary = 3000.00m;
 
     
     public Employee(string name, string alias)
@@ -18,9 +19,20 @@ class Employee
     public void printEmployee()
     {
         Console.WriteLine("Name: {0}\nAlias: {1}", name, alias);
-     
+         Console.WriteLine("Tax: {0:C}", Tax.CalcTax(this));
     }
 
+  public decimal Salary
+    {
+        get { return salary; }
+    }
+class Tax
+{
+    public static decimal CalcTax(Employee E)
+    {
+        return 0.08m * E.Salary;
+    }
+}
 
 }
 
