@@ -1,36 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-class Employee
+class Trabajador
 {
-    private string name;
+    private string nombre;
     private string alias;
    
-private decimal salary = 3000.00m;
+private decimal salario = 3000.00m;
 
     
-    public Employee(string name, string alias)
+    public Trabajador(string nombre, string alias)
     {
         
-        this.name = name;
+        this.nombre = nombre;
         this.alias = alias;
     }
 
    
-    public void printEmployee()
+    public void Imprimir()
     {
-        Console.WriteLine("Name: {0}\nAlias: {1}", name, alias);
+        Console.WriteLine("Name: {0}\nAlias: {1}", nombre, alias);
          Console.WriteLine("Tax: {0:C}", Tax.CalcTax(this));
     }
 
-  public decimal Salary
+  public decimal Salario
     {
-        get { return salary; }
+        get { return salario; }
     }
 class Tax
 {
-    public static decimal CalcTax(Employee E)
+    public static decimal CalcTax(Trabajador E)
     {
-        return 0.08m * E.Salary;
+        return 0.08m * E.salario;
     }
 }
 
@@ -42,9 +42,9 @@ class Program
 {
     static void Main(string[] args)
         {
-        Employee E1 = new Employee("Mingda Pan", "mpan");
+        Trabajador E1 = new Trabajador("Mingda Pan", "mpan");
 
       
-        E1.printEmployee();
+        E1.Imprimir();
     }
 }
